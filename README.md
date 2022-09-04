@@ -1,4 +1,4 @@
-# steadyfast
+![CuseyHub](https://github.com/cusey/ImageForWiki/blob/master/Logos/CuseyHub_Banner_Small.jpg)
 
 # Steady Fast
 
@@ -94,9 +94,3 @@ Please add this to your gem file
 ```
 gem 'rb-readline' 
 ```
-
-
-***
-
-# References   
-* [Codenvy online IDE](https://codenvy.com/)   
