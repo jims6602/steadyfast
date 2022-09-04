@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1> Dictionary</h1>
+
+<p>
+  <strong>Id:</strong>
+  <%= @dictionary.id %>
+</p>
+
+<p>
+  <strong>Word:</strong>
+  <%= @dictionary.word %>
+</p>
+
+<p>
+  <strong>Part of Speech:</strong>
+  <%= @dictionary.partOfSpeech %>
+</p>
+
+<p>
+  <strong>Definition:</strong>
+  <%= @dictionary.definition %>
+</p>
+
+<p>
+  <strong>Word Usage:</strong>
+  <%= @dictionary.wordUsage %>
+</p>
+
+<%= link_to 'Edit', edit_dictionary_path(@dictionary) %> |
+<%= link_to 'Back', dictionaries_path %>

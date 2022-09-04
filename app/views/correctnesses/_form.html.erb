@@ -1,0 +1,37 @@
+<%= form_for(correctness) do |f| %>
+  <% if correctness.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(correctness.errors.count, "error") %> prohibited this correctness from being saved:</h2>
+
+      <ul>
+      <% correctness.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dictionary_id %>
+    <%= f.text_field :dictionary_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :totalTryCount, 'Total Tried Count' %>
+    <%= f.number_field :totalTryCount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rightCount, 'Right Count' %>
+    <%= f.number_field :rightCount %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+  </div>
+<% end %>

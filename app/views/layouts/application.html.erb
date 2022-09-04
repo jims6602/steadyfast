@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steadyfast</title>
+    <%= csrf_meta_tags %>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        .simple{
+            width: 100%;
+        }
+        .simple table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        .simple td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .simple tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    
+    </style>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+
+    
+    
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    
+    <%= favicon_link_tag asset_path('favicon-ship.png') %>
+
+  </head>
+
+  <body>
+  
+
+    <nav class="navbar navbar-default" style="background-color:#ff8d79;">
+        <div class="container-fluid">
+            <div class="navbar-header">     
+                <a class="navbar-brand" href="#">Steadyfast</a>
+            </div>          
+            <ul id="nav-list" class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/work_space/index">Spelling</a></li>
+                <li><a href="/dictionaries">Dictionary</a></li>
+                <li><a href="/users">Users</a></li>
+                <li><a href="/correctnesses">Correctnesses</a></li>
+            </ul>
+          
+       </div>
+    </nav>
+
+
+    <%= yield %>
+  </body>
+</html>

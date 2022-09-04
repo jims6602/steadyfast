@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Correctness</h1>
+
+<p>
+  <strong>Dictionary Id:</strong>
+  <%= @correctness.dictionary_id %>
+</p>
+
+<p>
+  <strong>User Id:</strong>
+  <%= @correctness.user_id %>
+</p>
+
+<p>
+  <strong>Total Tried Count:</strong>
+  <%= @correctness.totalTryCount %>
+</p>
+
+<p>
+  <strong>Right Count:</strong>
+  <%= @correctness.rightCount %>
+</p>
+
+<%= link_to 'Edit', edit_correctness_path(@correctness) %> |
+<%= link_to 'Back', correctnesses_path %>

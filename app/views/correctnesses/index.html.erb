@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Correctnesses</h1>
+
+<table class="simple">
+  <thead>
+    <tr>
+      <th>Dictionary</th>
+      <th>User</th>
+      <th>Total Tries Count</th>
+      <th>Right Count</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @correctnesses.each do |correctness| %>
+      <tr>
+        <td><%= correctness.dictionary_id %></td>
+        <td><%= correctness.user_id %></td>
+        <td><%= correctness.totalTryCount %></td>
+        <td><%= correctness.rightCount %></td>
+        <td><%= link_to 'Show', correctness %></td>
+        <td><%= link_to 'Edit', edit_correctness_path(correctness) %></td>
+        <td><%= link_to 'Destroy', correctness, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Correctness', new_correctness_path %>
